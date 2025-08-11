@@ -1,0 +1,1171 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AboveGroupMaxOi",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AboveMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AbovePairMaxOi",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyBeingMarketClosed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMinPositionSizeUsd",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BlockOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DelegateNotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DelegatedActionNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DoesntExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddresses",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollateralIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInputLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoSl",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTp",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTrade",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotWrappedNativeToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotYourOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Paused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PendingTrigger",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceImpactTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WaitTimeout",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongAccess",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLeverage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongOrderType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongSl",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTp",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTradeType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroValue",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum IAddressStore.Role",
+        "name": "role",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "access",
+        "type": "bool"
+      }
+    ],
+    "name": "AccessControlUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gns",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gnsStaking",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAddressStore.Addresses",
+        "name": "addresses",
+        "type": "tuple"
+      }
+    ],
+    "name": "AddressesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "bypass",
+        "type": "bool"
+      }
+    ],
+    "name": "ByPassTriggerLinkUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "pendingOrderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "ChainlinkCallbackTimeout",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "CouldNotCloseTrade",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "open",
+        "type": "bool"
+      }
+    ],
+    "name": "MarketOrderInitiated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newValueBlocks",
+        "type": "uint256"
+      }
+    ],
+    "name": "MarketOrdersTimeoutBlocksUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nativeTokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "NativeTokenWrapped",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "OpenLimitCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newPrice",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newTp",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newSl",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "maxSlippageP",
+        "type": "uint64"
+      }
+    ],
+    "name": "OpenLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "OpenOrderPlaced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "byPassesLinkCost",
+        "type": "bool"
+      }
+    ],
+    "name": "TriggerOrderInitiated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      }
+    ],
+    "name": "cancelOpenOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      }
+    ],
+    "name": "closeTradeMarket",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "closeTradeMarketTimeout",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_callData",
+        "type": "bytes"
+      }
+    ],
+    "name": "delegatedTradingAction",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAddresses",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gns",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gnsStaking",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IAddressStore.Addresses",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getByPassTriggerLink",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketOrdersTimeoutBlocks",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      }
+    ],
+    "name": "getTradingDelegate",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWrappedNativeToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "internalType": "enum IAddressStore.Role",
+        "name": "_role",
+        "type": "uint8"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rolesManager",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_marketOrdersTimeoutBlocks",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_usersByPassTriggerLink",
+        "type": "address[]"
+      }
+    ],
+    "name": "initializeTrading",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      }
+    ],
+    "name": "isWrappedNativeToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "_trade",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_maxSlippageP",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "openTrade",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "openTradeMarketTimeout",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "_trade",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_maxSlippageP",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "openTradeNative",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "removeTradingDelegate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_accounts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "enum IAddressStore.Role[]",
+        "name": "_roles",
+        "type": "uint8[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_values",
+        "type": "bool[]"
+      }
+    ],
+    "name": "setRoles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_delegate",
+        "type": "address"
+      }
+    ],
+    "name": "setTradingDelegate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_packed",
+        "type": "uint256"
+      }
+    ],
+    "name": "triggerOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_users",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_shouldByPass",
+        "type": "bool[]"
+      }
+    ],
+    "name": "updateByPassTriggerLink",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_valueBlocks",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateMarketOrdersTimeoutBlocks",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_triggerPrice",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_tp",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_sl",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_maxSlippageP",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateOpenOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_newSl",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateSl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_newTp",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateTp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

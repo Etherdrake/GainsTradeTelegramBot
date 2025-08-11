@@ -1,0 +1,11 @@
+pub mod getalltradeinfos;
+pub mod getallpendingsorders;
+pub mod getalltrades;
+pub mod getcollaterals;
+pub mod getpendingorder;
+pub mod getpendingorders;
+pub mod getpnlpercent;
+pub mod gettradeinfo;
+pub mod gettradeinfos;
+pub mod gettraders;
+pub mod gettrades;

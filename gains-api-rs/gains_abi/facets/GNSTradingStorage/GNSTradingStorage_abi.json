@@ -1,0 +1,2737 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AboveMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BlockOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralAlreadyActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralAlreadyDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DoesntExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddresses",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollateralIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInputLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxSlippageZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingCollaterals",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoSl",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTp",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Paused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradeInfoCollateralPriceUsdZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradeOpenPriceZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradePairNotListed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradePositionSizeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradeSlInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TradeTpInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongAccess",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTradeType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroValue",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum IAddressStore.Role",
+        "name": "role",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "access",
+        "type": "bool"
+      }
+    ],
+    "name": "AccessControlUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gns",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gnsStaking",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAddressStore.Addresses",
+        "name": "addresses",
+        "type": "tuple"
+      }
+    ],
+    "name": "AddressesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "index",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "gToken",
+        "type": "address"
+      }
+    ],
+    "name": "CollateralAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "index",
+        "type": "uint8"
+      }
+    ],
+    "name": "CollateralDisabled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "index",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isActive",
+        "type": "bool"
+      }
+    ],
+    "name": "CollateralUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "index",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "gToken",
+        "type": "address"
+      }
+    ],
+    "name": "GTokenUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "openPrice",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "tp",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "sl",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "maxSlippageP",
+        "type": "uint16"
+      }
+    ],
+    "name": "OpenOrderDetailsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "PendingOrderClosed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.PendingOrder",
+        "name": "pendingOrder",
+        "type": "tuple"
+      }
+    ],
+    "name": "PendingOrderStored",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      }
+    ],
+    "name": "TradeClosed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint120",
+        "name": "collateralAmount",
+        "type": "uint120"
+      }
+    ],
+    "name": "TradeCollateralUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newSl",
+        "type": "uint64"
+      }
+    ],
+    "name": "TradeSlUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "trade",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "slLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint48",
+            "name": "lastOiUpdateTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "collateralPriceUsd",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "__placeholder",
+            "type": "uint48"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.TradeInfo",
+        "name": "tradeInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "TradeStored",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newTp",
+        "type": "uint64"
+      }
+    ],
+    "name": "TradeTpUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "enum ITradingStorage.TradingActivated",
+        "name": "activated",
+        "type": "uint8"
+      }
+    ],
+    "name": "TradingActivatedUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateral",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_gToken",
+        "type": "address"
+      }
+    ],
+    "name": "addCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "closePendingOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      }
+    ],
+    "name": "closeTrade",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAddresses",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gns",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gnsStaking",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IAddressStore.Addresses",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllPendingOrders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ITradingStorage.PendingOrder[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllTradeInfos",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "slLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint48",
+            "name": "lastOiUpdateTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "collateralPriceUsd",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "__placeholder",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct ITradingStorage.TradeInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllTrades",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_index",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCollateral",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "collateral",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isActive",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint88",
+            "name": "__placeholder",
+            "type": "uint88"
+          },
+          {
+            "internalType": "uint128",
+            "name": "precision",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "precisionDelta",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Collateral",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateral",
+        "type": "address"
+      }
+    ],
+    "name": "getCollateralIndex",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCollaterals",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "collateral",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isActive",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint88",
+            "name": "__placeholder",
+            "type": "uint88"
+          },
+          {
+            "internalType": "uint128",
+            "name": "precision",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "precisionDelta",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Collateral[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCollateralsCount",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      },
+      {
+        "internalType": "enum ITradingStorage.CounterType",
+        "name": "_type",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCounters",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "currentIndex",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "openCount",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Counter",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getGToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ITradingStorage.TradeType",
+        "name": "_tradeType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getPendingOpenOrderType",
+    "outputs": [
+      {
+        "internalType": "enum ITradingStorage.PendingOrderType",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "getPendingOrder",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ITradingStorage.PendingOrder",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getPendingOrders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ITradingStorage.PendingOrder[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_openPrice",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_currentPrice",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint24",
+        "name": "_leverage",
+        "type": "uint24"
+      }
+    ],
+    "name": "getPnlPercent",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTrade",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_index",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTradeInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "slLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint48",
+            "name": "lastOiUpdateTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "collateralPriceUsd",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "__placeholder",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct ITradingStorage.TradeInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      }
+    ],
+    "name": "getTradeInfos",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "slLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint48",
+            "name": "lastOiUpdateTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "collateralPriceUsd",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "__placeholder",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct ITradingStorage.TradeInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      },
+      {
+        "internalType": "enum ITradingStorage.PendingOrderType",
+        "name": "_orderType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getTradePendingOrderBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      }
+    ],
+    "name": "getTraderStored",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_offset",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_limit",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTraders",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      }
+    ],
+    "name": "getTrades",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTradingActivated",
+    "outputs": [
+      {
+        "internalType": "enum ITradingStorage.TradingActivated",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "internalType": "enum IAddressStore.Role",
+        "name": "_role",
+        "type": "uint8"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rolesManager",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_gns",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_gnsStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_collaterals",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_gTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "initializeTradingStorage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_index",
+        "type": "uint8"
+      }
+    ],
+    "name": "isCollateralActive",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_index",
+        "type": "uint8"
+      }
+    ],
+    "name": "isCollateralListed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_accounts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "enum IAddressStore.Role[]",
+        "name": "_roles",
+        "type": "uint8[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_values",
+        "type": "bool[]"
+      }
+    ],
+    "name": "setRoles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ITradingStorage.PendingOrder",
+        "name": "_pendingOrder",
+        "type": "tuple"
+      }
+    ],
+    "name": "storePendingOrder",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint16",
+                "name": "pairIndex",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint24",
+                "name": "leverage",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "long",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isOpen",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint8",
+                "name": "collateralIndex",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum ITradingStorage.TradeType",
+                "name": "tradeType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint120",
+                "name": "collateralAmount",
+                "type": "uint120"
+              },
+              {
+                "internalType": "uint64",
+                "name": "openPrice",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "tp",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "sl",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint192",
+                "name": "__placeholder",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Trade",
+            "name": "trade",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ITradingStorage.PendingOrder",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "_trade",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "createdBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "tpLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "slLastUpdatedBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxSlippageP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint48",
+            "name": "lastOiUpdateTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "collateralPriceUsd",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "__placeholder",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct ITradingStorage.TradeInfo",
+        "name": "_tradeInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "storeTrade",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint24",
+            "name": "leverage",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOpen",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "collateralIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum ITradingStorage.TradeType",
+            "name": "tradeType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint120",
+            "name": "collateralAmount",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint64",
+            "name": "openPrice",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tp",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "sl",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint192",
+            "name": "__placeholder",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Trade",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "toggleCollateralActiveState",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateral",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_gToken",
+        "type": "address"
+      }
+    ],
+    "name": "updateGToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_openPrice",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_tp",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_sl",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_maxSlippageP",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateOpenOrderDetails",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint120",
+        "name": "_collateralAmount",
+        "type": "uint120"
+      }
+    ],
+    "name": "updateTradeCollateralAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_newSl",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateTradeSl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_tradeId",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_newTp",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateTradeTp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ITradingStorage.TradingActivated",
+        "name": "_activated",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateTradingActivated",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
