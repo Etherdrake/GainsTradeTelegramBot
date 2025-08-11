@@ -1,0 +1,1 @@
+import{d as n,u as o,c,b as t,t as s,e as a,f as _}from"./index.js";const i={class:"limitexecuted"},d={class:"title"},l=t("div",{class:"content"},null,-1),u={class:"thank"},f=n({__name:"LimitExecuted",setup(r){const{t:e}=o();return(p,m)=>(_(),c("div",i,[t("div",d,s(a(e)("aboutpage.title")),1),l,t("div",u,s(a(e)("aboutpage.thanks")),1)]))}});export{f as default};

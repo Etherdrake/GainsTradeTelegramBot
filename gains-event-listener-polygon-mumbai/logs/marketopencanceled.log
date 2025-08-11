@@ -1,0 +1,186 @@
+2024/01/31 14:41:06 MarketOpenCanceled Transformed:
+OrderID: 38947131
+Trader: 0x0000000000000000000000009cc6d132fedd90bad0b9fd58e6581d744eff20cc
+PairIndex: 22
+CancelReason: 3
+
+2024/02/09 21:28:08 MarketOpenCanceled Transformed:
+OrderID: 38971867
+Trader: 0x000000000000000000000000596cdbb0d4b74cb5dcdf86613d8012e0cd3e522f
+PairIndex: 0
+CancelReason: 3
+
+2024/02/10 13:51:04 MarketOpenCanceled Transformed:
+OrderID: 38973884
+Trader: 0x0000000000000000000000004a22a6b0a7af226d4b2e8182c852550f3f53bbef
+PairIndex: 0
+CancelReason: 5
+
+2024/02/10 20:51:15 MarketOpenCanceled Transformed:
+OrderID: 38974442
+Trader: 0x000000000000000000000000f6f0c9383591d580a23e46fc4472e6f5231ba896
+PairIndex: 2
+CancelReason: 3
+
+2024/02/11 00:43:35 MarketOpenCanceled Transformed:
+OrderID: 38974778
+Trader: 0x000000000000000000000000f6f0c9383591d580a23e46fc4472e6f5231ba896
+PairIndex: 2
+CancelReason: 3
+
+2024/02/11 14:10:03 MarketOpenCanceled Transformed:
+OrderID: 38976015
+Trader: 0x000000000000000000000000f6f0c9383591d580a23e46fc4472e6f5231ba896
+PairIndex: 35
+CancelReason: 3
+
+2024/02/15 19:05:51 MarketOpenCanceled Transformed:
+OrderID: 24698380
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 7
+CancelReason: 5
+
+2024/02/15 19:05:53 MarketOpenCanceled Transformed:
+OrderID: 24698381
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 140
+CancelReason: 5
+
+2024/02/15 19:06:11 MarketOpenCanceled Transformed:
+OrderID: 24698382
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 140
+CancelReason: 5
+
+2024/02/15 19:12:05 MarketOpenCanceled Transformed:
+OrderID: 24698389
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:12:23 MarketOpenCanceled Transformed:
+OrderID: 24698390
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:12:41 MarketOpenCanceled Transformed:
+OrderID: 24698391
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:12:55 MarketOpenCanceled Transformed:
+OrderID: 24698392
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:13:27 MarketOpenCanceled Transformed:
+OrderID: 24698393
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:14:23 MarketOpenCanceled Transformed:
+OrderID: 24698394
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 171
+CancelReason: 5
+
+2024/02/15 19:14:41 MarketOpenCanceled Transformed:
+OrderID: 24698395
+Trader: 0x0000000000000000000000001c5a843483e3ce5439f5859f87eabae20f0edf15
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 19:39:01 MarketOpenCanceled Transformed:
+OrderID: 24698407
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 159
+CancelReason: 5
+
+2024/02/15 21:02:03 MarketOpenCanceled Transformed:
+OrderID: 24698434
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 140
+CancelReason: 5
+
+2024/02/15 21:04:25 MarketOpenCanceled Transformed:
+OrderID: 24698436
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 167
+CancelReason: 5
+
+2024/02/15 21:11:59 MarketOpenCanceled Transformed:
+OrderID: 24698441
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 159
+CancelReason: 5
+
+2024/02/15 21:13:59 MarketOpenCanceled Transformed:
+OrderID: 24698446
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 159
+CancelReason: 5
+
+2024/02/15 21:17:43 MarketOpenCanceled Transformed:
+OrderID: 24698456
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 159
+CancelReason: 5
+
+2024/02/15 21:17:53 MarketOpenCanceled Transformed:
+OrderID: 24698458
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 47
+CancelReason: 5
+
+2024/02/15 21:20:05 MarketOpenCanceled Transformed:
+OrderID: 24698465
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 21:22:37 MarketOpenCanceled Transformed:
+OrderID: 24698468
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 21:22:57 MarketOpenCanceled Transformed:
+OrderID: 24698470
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 21:28:13 MarketOpenCanceled Transformed:
+OrderID: 24698483
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 21:31:19 MarketOpenCanceled Transformed:
+OrderID: 24698488
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 158
+CancelReason: 5
+
+2024/02/15 21:52:01 MarketOpenCanceled Transformed:
+OrderID: 24698515
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 47
+CancelReason: 5
+
+2024/02/16 21:29:24 MarketOpenCanceled Transformed:
+OrderID: 24698727
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 20
+CancelReason: 5
+
+2024/02/16 21:29:24 MarketOpenCanceled Transformed:
+OrderID: 24698727
+Trader: 0x0000000000000000000000000f1dec63638ddca94f33793c52a644ce30bf8c71
+PairIndex: 20
+CancelReason: 5
+

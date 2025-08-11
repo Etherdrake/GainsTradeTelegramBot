@@ -1,0 +1,120 @@
+All Trading Functions:
+
+// Open new trade (MARKET/LIMIT)
+function openTrade
+        StorageInterfaceV5.Trade memory t,
+        IGNSOracleRewardsV6_4_1.OpenLimitOrderType orderType, // LEGACY => market
+        uint slippageP, // 1e10 (%)
+        address referrer
+
+// Close trade (MARKET)
+function closeTradeMarket(uint pairIndex, uint index)
+
+// Manage limit order (OPEN)
+function updateOpenLimitOrder(
+    uint pairIndex,
+    uint index,
+    uint price, // PRECISION
+    uint tp,
+    uint sl,
+    uint maxSlippageP
+
+function cancelOpenLimitOrder(uint pairIndex, uint index) external notContract notDone {
+        address sender = _msgSender();
+        require(storageT.hasOpenLimitOrder(sender, pairIndex, index), "NO_LIMIT");
+
+        StorageInterfaceV5.OpenLimitOrder memory o = storageT.getOpenLimitOrder(sender, pairIndex, index);
+
+        _checkNoPendingTrigger(sender, pairIndex, index, StorageInterfaceV5.LimitOrder.OPEN);
+
+        storageT.unregisterOpenLimitOrder(sender, pairIndex, index);
+        storageT.transferDai(address(storageT), sender, o.positionSize);
+
+        emit OpenLimitCanceled(sender, pairIndex, index);
+    }
+
+// Manage limit order (TP/SL)
+function updateTp(uint pairIndex, uint index, uint newTp)
+
+function updateSl(uint pairIndex, uint index, uint newSl)
+
+// Execute limit order
+function executeNftOrder(uint256 packed) external notContract notDone
+
+
+ // Market timeout
+function openTradeMarketTimeout(uint _order) external notContract notDone {
+    address sender = _msgSender();
+
+    StorageInterfaceV5.PendingMarketOrder memory o = storageT.reqID_pendingMarketOrder(_order);
+    StorageInterfaceV5.Trade memory t = o.trade;
+
+    require(o.block > 0 && block.number >= o.block + marketOrdersTimeout, "WAIT_TIMEOUT");
+    require(t.trader == sender, "NOT_YOUR_ORDER");
+    require(t.leverage > 0, "WRONG_MARKET_ORDER_TYPE");
+
+    storageT.unregisterPendingMarketOrder(_order, true);
+    storageT.transferDai(address(storageT), sender, t.positionSizeDai);
+
+    emit ChainlinkCallbackTimeout(_order, o);
+}
+
+function closeTradeMarketTimeout(uint _order) external notContract notDone {
+    address sender = _msgSender();
+
+    StorageInterfaceV5.PendingMarketOrder memory o = storageT.reqID_pendingMarketOrder(_order);
+    StorageInterfaceV5.Trade memory t = o.trade;
+
+    require(o.block > 0 && block.number >= o.block + marketOrdersTimeout, "WAIT_TIMEOUT");
+    require(t.trader == sender, "NOT_YOUR_ORDER");
+    require(t.leverage == 0, "WRONG_MARKET_ORDER_TYPE");
+
+    storageT.unregisterPendingMarketOrder(_order, false);
+
+    (bool success, ) = address(this).delegatecall(
+        abi.encodeWithSignature("closeTradeMarket(uint256,uint256)", t.pairIndex, t.index)
+    );
+
+    if (!success) {
+        emit CouldNotCloseTrade(sender, t.pairIndex, t.index);
+    }
+
+    emit ChainlinkCallbackTimeout(_order, o);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

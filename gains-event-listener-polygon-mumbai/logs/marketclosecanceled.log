@@ -1,0 +1,405 @@
+2024/01/31 13:25:27 NftOrderCanceled Transformed:
+OrderID: 38946867
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 0
+CancelReason: 0
+
+2024/01/31 13:25:49 NftOrderCanceled Transformed:
+OrderID: 38946868
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 0
+CancelReason: 0
+
+2024/01/31 14:00:04 NftOrderCanceled Transformed:
+OrderID: 38946965
+NftHolder: 0x000000000000000000000000c83b78a64485e24be0af82ae2341c42dc5bd8fd8
+OrderType: 1
+CancelReason: 1
+
+2024/01/31 14:00:09 NftOrderCanceled Transformed:
+OrderID: 38946966
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 1
+CancelReason: 1
+
+2024/01/31 14:00:12 MarketCloseCanceled Transformed:
+OrderID: 38946969
+Trader: %!d(string=0x00000000000000000000000034ca13442bfc2a5fa5969ff2e6bef76150bead2e)
+PairIndex: 0
+Index: 0
+CancelReason: 9
+
+2024/01/31 14:00:20 MarketCloseCanceled Transformed:
+OrderID: 38946974
+Trader: %!d(string=0x0000000000000000000000004bee73089d889018fd856683a813672ce2a4ccdb)
+PairIndex: 22
+Index: 0
+CancelReason: 9
+
+2024/01/31 14:00:27 MarketCloseCanceled Transformed:
+OrderID: 38946979
+Trader: %!d(string=0x000000000000000000000000be08cc3f5e425b06e47e202e3bc99a9e752a57dd)
+PairIndex: 0
+Index: 0
+CancelReason: 9
+
+2024/02/02 09:18:38 NftOrderCanceled Transformed:
+OrderID: 38952158
+NftHolder: 0x000000000000000000000000c83b78a64485e24be0af82ae2341c42dc5bd8fd8
+OrderType: 3
+CancelReason: 3
+
+2024/02/02 09:30:39 NftOrderCanceled Transformed:
+OrderID: 38952186
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 0
+CancelReason: 0
+
+2024/02/02 09:39:37 NftOrderCanceled Transformed:
+OrderID: 38952203
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 0
+CancelReason: 0
+
+2024/02/02 09:39:37 NftOrderCanceled Transformed:
+OrderID: 38952204
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 2
+CancelReason: 2
+
+2024/02/02 09:40:41 NftOrderCanceled Transformed:
+OrderID: 38952216
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 09:40:48 NftOrderCanceled Transformed:
+OrderID: 38952217
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 09:41:09 NftOrderCanceled Transformed:
+OrderID: 38952219
+NftHolder: 0x000000000000000000000000fe24cfb2f8872e9ed097c451de065a9f6048915b
+OrderType: 3
+CancelReason: 3
+
+2024/02/02 10:04:27 NftOrderCanceled Transformed:
+OrderID: 38952274
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 2
+CancelReason: 2
+
+2024/02/02 10:04:28 NftOrderCanceled Transformed:
+OrderID: 38952275
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 0
+CancelReason: 0
+
+2024/02/02 10:58:51 NftOrderCanceled Transformed:
+OrderID: 38952471
+NftHolder: 0x000000000000000000000000c83b78a64485e24be0af82ae2341c42dc5bd8fd8
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:01:21 NftOrderCanceled Transformed:
+OrderID: 38952478
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 0
+CancelReason: 0
+
+2024/02/02 11:41:32 NftOrderCanceled Transformed:
+OrderID: 38952586
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:41:44 NftOrderCanceled Transformed:
+OrderID: 38952587
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:42:00 NftOrderCanceled Transformed:
+OrderID: 38952588
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:42:45 NftOrderCanceled Transformed:
+OrderID: 38952593
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:42:47 NftOrderCanceled Transformed:
+OrderID: 38952594
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:43:02 NftOrderCanceled Transformed:
+OrderID: 38952595
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/02 11:43:13 NftOrderCanceled Transformed:
+OrderID: 38952597
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/05 10:59:36 NftOrderCanceled Transformed:
+OrderID: 38959509
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/05 11:06:45 NftOrderCanceled Transformed:
+OrderID: 38959541
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 2
+CancelReason: 2
+
+2024/02/05 11:06:56 NftOrderCanceled Transformed:
+OrderID: 38959542
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 2
+CancelReason: 2
+
+2024/02/05 23:06:31 NftOrderCanceled Transformed:
+OrderID: 38960185
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/05 23:06:44 NftOrderCanceled Transformed:
+OrderID: 38960186
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 0
+CancelReason: 0
+
+2024/02/06 09:55:54 NftOrderCanceled Transformed:
+OrderID: 38962261
+NftHolder: 0x000000000000000000000000a2fb99d7da1550e439b60cdade83216134233a6b
+OrderType: 2
+CancelReason: 2
+
+2024/02/09 09:26:10 NftOrderCanceled Transformed:
+OrderID: 38970782
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 1
+CancelReason: 1
+
+2024/02/09 10:35:41 NftOrderCanceled Transformed:
+OrderID: 38970927
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/09 10:37:10 NftOrderCanceled Transformed:
+OrderID: 38970929
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/09 11:53:43 NftOrderCanceled Transformed:
+OrderID: 38971062
+NftHolder: 0x000000000000000000000000fe24cfb2f8872e9ed097c451de065a9f6048915b
+OrderType: 1
+CancelReason: 1
+
+2024/02/09 15:10:18 NftOrderCanceled Transformed:
+OrderID: 38971404
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 3
+CancelReason: 3
+
+2024/02/09 15:10:29 NftOrderCanceled Transformed:
+OrderID: 38971406
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 3
+CancelReason: 3
+
+2024/02/09 17:23:08 NftOrderCanceled Transformed:
+OrderID: 38971617
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 0
+CancelReason: 0
+
+2024/02/10 17:20:19 NftOrderCanceled Transformed:
+OrderID: 38974202
+NftHolder: 0x000000000000000000000000c6304496cc67ad10212f90ac889899da574f0594
+OrderType: 2
+CancelReason: 2
+
+2024/02/10 19:28:33 NftOrderCanceled Transformed:
+OrderID: 38974355
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/10 19:28:54 NftOrderCanceled Transformed:
+OrderID: 38974357
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/10 23:51:33 NftOrderCanceled Transformed:
+OrderID: 38974726
+NftHolder: 0x000000000000000000000000fe24cfb2f8872e9ed097c451de065a9f6048915b
+OrderType: 1
+CancelReason: 1
+
+2024/02/10 23:51:35 NftOrderCanceled Transformed:
+OrderID: 38974727
+NftHolder: 0x000000000000000000000000a2fb99d7da1550e439b60cdade83216134233a6b
+OrderType: 1
+CancelReason: 1
+
+2024/02/11 08:22:22 NftOrderCanceled Transformed:
+OrderID: 38975530
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 1
+CancelReason: 1
+
+2024/02/11 09:24:37 NftOrderCanceled Transformed:
+OrderID: 38975654
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 3
+CancelReason: 3
+
+2024/02/11 09:24:39 NftOrderCanceled Transformed:
+OrderID: 38975655
+NftHolder: 0x000000000000000000000000a2fb99d7da1550e439b60cdade83216134233a6b
+OrderType: 3
+CancelReason: 3
+
+2024/02/11 09:24:49 NftOrderCanceled Transformed:
+OrderID: 38975657
+NftHolder: 0x00000000000000000000000038ef875b739844a880563b058a3c5914c82b10be
+OrderType: 3
+CancelReason: 3
+
+2024/02/11 12:10:50 NftOrderCanceled Transformed:
+OrderID: 38975830
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 2
+CancelReason: 2
+
+2024/02/12 08:40:29 NftOrderCanceled Transformed:
+OrderID: 38977671
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 1
+CancelReason: 1
+
+2024/02/12 08:40:30 NftOrderCanceled Transformed:
+OrderID: 38977672
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 08:40:32 NftOrderCanceled Transformed:
+OrderID: 38977674
+NftHolder: 0x000000000000000000000000fe24cfb2f8872e9ed097c451de065a9f6048915b
+OrderType: 1
+CancelReason: 1
+
+2024/02/12 08:40:32 NftOrderCanceled Transformed:
+OrderID: 38977675
+NftHolder: 0x000000000000000000000000fe24cfb2f8872e9ed097c451de065a9f6048915b
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:39:12 NftOrderCanceled Transformed:
+OrderID: 38977815
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:39:25 NftOrderCanceled Transformed:
+OrderID: 38977816
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:39:37 NftOrderCanceled Transformed:
+OrderID: 38977817
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:39:49 NftOrderCanceled Transformed:
+OrderID: 38977818
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:40:01 NftOrderCanceled Transformed:
+OrderID: 38977819
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:40:12 NftOrderCanceled Transformed:
+OrderID: 38977820
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/12 09:40:23 NftOrderCanceled Transformed:
+OrderID: 38977821
+NftHolder: 0x00000000000000000000000031f49e48750d34b744d003e1993411fde5746500
+OrderType: 0
+CancelReason: 0
+
+2024/02/15 20:13:37 NftOrderCanceled Transformed:
+OrderID: 24698414
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 2
+CancelReason: 2
+
+2024/02/15 21:33:13 NftOrderCanceled Transformed:
+OrderID: 24698492
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 3
+CancelReason: 3
+
+2024/02/15 21:33:27 NftOrderCanceled Transformed:
+OrderID: 24698493
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 3
+CancelReason: 3
+
+2024/02/15 21:33:43 NftOrderCanceled Transformed:
+OrderID: 24698494
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 3
+CancelReason: 3
+
+2024/02/15 21:33:59 NftOrderCanceled Transformed:
+OrderID: 24698496
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 3
+CancelReason: 3
+
+2024/02/15 21:43:03 NftOrderCanceled Transformed:
+OrderID: 24698504
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 3
+CancelReason: 3
+
+2024/02/16 21:37:44 NftOrderCanceled Transformed:
+OrderID: 24698740
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 1
+CancelReason: 1
+
+2024/02/16 21:37:44 NftOrderCanceled Transformed:
+OrderID: 24698740
+NftHolder: 0x000000000000000000000000519e23e8d6b5e1682a1635df3419828dea858018
+OrderType: 1
+CancelReason: 1
+
