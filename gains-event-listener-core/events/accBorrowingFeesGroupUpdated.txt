@@ -1,0 +1,1 @@
+{"name":"accBorrowingFeesGroupUpdated","value":{"collateralIndex":"1","groupIndex":"2","groupBorrowingFees":{"accFeeLong":"175592023786","accFeeShort":"20737432272","accLastUpdateBlock":216709061}}}

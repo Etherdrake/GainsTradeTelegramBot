@@ -1,0 +1,1 @@
+{"name":"new-trade-history","date":"2024-05-30T20:32:50.000Z","pair":"ETH/USD","address":"0x959E7A7Ad96C9F0cf2F5074ebafB3134E2C55b41","action":"TradeClosedMarket","price":3742.2352,"collateralPriceUsd":3746.65901205,"long":1,"size":0.95825243,"leverage":3,"pnl_net":-0.0178712539,"tx":"0x47e3a91886d62a0b082094f93c07586286220de5ba35132f56633a1dc60cdbe9","collateralIndex":"2"}

@@ -1,0 +1,1 @@
+{"name":"openInterestPairUpdated","value":{"pairIndex":"1","collateralIndex":"2","pairBorrowingFees":{"oiLong":"842310740001","oiShort":"0"}}}

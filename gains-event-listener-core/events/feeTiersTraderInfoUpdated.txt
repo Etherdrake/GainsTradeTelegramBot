@@ -1,0 +1,1 @@
+{"name":"feeTiersTraderInfoUpdated","value":{"trader":"0xE4D6983a254E695cF3Fe40172aD741973126656d","traderInfo":["19873","3149674804491598105356800"]}}

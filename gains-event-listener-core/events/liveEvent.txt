@@ -1,0 +1,1 @@
+{"name":"liveEvent","value":{"event":"TradeSlUpdated","blockNumber":216709091,"l1BlockNumber":19985055,"transactionHash":"0xfa199febc74701d45a70a6bd442f07e11939dbcf23a01ff95246b313ebc7a6a6","returnValues":{"0":["0x09475262c6a1ffBeDd480d2a15f35F978AaaAc38","58"],"1":"11210000000","tradeId":["0x09475262c6a1ffBeDd480d2a15f35F978AaaAc38","58"],"newSl":"11210000000"}}}

@@ -1,0 +1,1 @@
+{"name":"openInterestGroupUpdated","value":{"groupIndex":"1","collateralIndex":"2","groupBorrowingFees":{"oiLong":"1582431940003","oiShort":"1"}}}
