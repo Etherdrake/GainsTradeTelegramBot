@@ -1,0 +1,14 @@
+[package]
+name = "gains_multicall_cacher_rdb"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = "2.0.13"
+tokio = { version = "1.35.1", features = ["rt", "rt-multi-thread", "macros"] }
+serde = { version = "1.0.196", features = ["derive"] }
+ethcontract = "0.25.4"
+redis = { version = "0.24.0", features = ["aio", "tokio-comp"] }
+anyhow = "1.0.79"
